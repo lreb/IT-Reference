@@ -1,8 +1,13 @@
 # JobOrchestration
 
-Import DB
+Import DB (postgresql 16.0)
+
+- Create a database in postgres
+- remove schema public
+- import from dump file
+
 ```bash
-s
+pg_restore -U <user_name> -d wiki_chino db_bk/<backup_file>.sql
 ```
 
 
